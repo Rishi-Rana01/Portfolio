@@ -18,8 +18,13 @@ const Navbar = () => {
                 <a href="#home" className='text-4xl font-bold italic text-white'>Portfolio</a>
 
                 {/* {Mobile Menu Toggle} */}
-                <button className='md:hidden focus:outline-none' onClick={() => setIsOpen(!isOpen)}>
-                    <FiMenu className='w-8 h-8 text-white' />
+                <button
+                    type='button'
+                    aria-label={isOpen ? 'Close menu' : 'Open menu'}
+                    className='md:hidden focus:outline-none z-40 p-1 bg-transparent rounded'
+                    onClick={() => setIsOpen(!isOpen)}
+                >
+                    {isOpen ? <FiX className='w-8 h-8 text-white' /> : <FiMenu className='w-8 h-8 text-white' />}
                 </button>
 
                 {/* Desktop Navigation */}
@@ -44,11 +49,7 @@ const Navbar = () => {
             </div>
 
             {/* Mobile Navigation */}
-            <div className={`${isOpen ? 'block' : 'hidden'} md:hidden bg-[#801b93] absolute top-0 left-0 w-full h-screen flex flex-col items-center justify-center space-y-8 pt-16`}>
-                {/* {close Button} */}
-                <button className='absolute top-5 right-5 text-white' onClick={() => setIsOpen(false)}>
-                    <FiX className="w-8 h-8" />
-                </button>
+            <div className={`${isOpen ? 'block' : 'hidden'} md:hidden bg-[#801b93] fixed top-0 left-0 w-full h-screen flex flex-col items-center justify-center space-y-8 pt-20 z-40`}>
                 {/* Mobile Navigation */}
                 {NavbarLinks.map((link) => (
                     <a 
@@ -66,8 +67,6 @@ const Navbar = () => {
                 <button className='text-lg text-white border-2 border-purple-500 py-2 px-6 rounded-full transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-purple-600 hover:border-purple-600 hover:shadow-[0_0_15px_rgba(168,85,247,0.5)] active:scale-95'>
                     Contact
                 </button>
-                {/* contact Button */}
-                <button className='inline-flex text-white border-2 py-2 px-6 focus:outline-none hover:bg-purple-800 rounded-full text-lg'>Contact</button>
             </div>
 
 

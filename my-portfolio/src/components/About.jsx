@@ -3,7 +3,7 @@ import React from 'react'
 
 const About = () => {
     return (
-        <section id='about' className='min-h-screen overflow-hidden flex items-center justify-center text-white px-4 sm:px-6'>
+        <section id='about' className='min-h-screen  flex items-center justify-center text-white px-4 sm:px-6'>
             <div className='max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center'>
                 <figure data-aos='fade-right' data-aos-delay='500' className='flex flex-wrap justify-center gap-4 relative'>
                     <div className='h-[200px] sm:h-[300px] w-[300px] sm:w-[400px] lg:h-[300px] lg:w-[500px] bg-linear-to-l from-[#6d2897] via-[#6c95f5] to-[#bb61c5] absolute transform

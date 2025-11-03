@@ -25,28 +25,47 @@ const Navbar = () => {
                 {/* Desktop Navigation */}
                 <nav className='hidden md:flex items-center space-x-7'>
                     {NavbarLinks.map((link) => (
-                        <a key={link.id} href={link.link} className='hover:text-gray-200 text-lg'>
-                            {link.name}
+                        <a 
+                            key={link.id} 
+                            href={link.link} 
+                            className='relative text-lg group transition-all duration-300 ease-in-out'
+                        >
+                            <span className='relative inline-block transition-all duration-300 ease-in-out hover:text-purple-400'>
+                                {link.name}
+                                <span className='absolute bottom-0 left-0 w-0 h-0.5 bg-purple-400 transition-all duration-300 ease-out group-hover:w-full'></span>
+                            </span>
                         </a>
                     ))}
-                    <button className='inline-flex text-white border-2 py-2 px-6 focus:outline-none hover:bg-purple-800 rounded-full text-lg'>Contact</button>
-
+                    <button className='inline-flex text-white border-2 border-purple-500 py-2 px-6 focus:outline-none hover:bg-purple-600 hover:border-purple-600 rounded-full text-lg transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-[0_0_15px_rgba(168,85,247,0.5)] active:scale-95'>
+                        Contact
+                    </button>
                 </nav>
 
             </div>
 
             {/* Mobile Navigation */}
-            <div className={`${isOpen ? 'block' : 'hidden'} md:hidden bg-[#801b93] absolute top-0 left-0 w-full h-screen flex flex-col items-center justify-center  space-y-8 pt-16`}>
+            <div className={`${isOpen ? 'block' : 'hidden'} md:hidden bg-[#801b93] absolute top-0 left-0 w-full h-screen flex flex-col items-center justify-center space-y-8 pt-16`}>
                 {/* {close Button} */}
                 <button className='absolute top-5 right-5 text-white' onClick={() => setIsOpen(false)}>
                     <FiX className="w-8 h-8" />
                 </button>
                 {/* Mobile Navigation */}
                 {NavbarLinks.map((link) => (
-                    <a key={link.id} href={link.link} className='text-lg text-white hover:text-gray-300 ' onClick={() => setIsOpen(false)}>
-                        {link.name}
+                    <a 
+                        key={link.id} 
+                        href={link.link} 
+                        className='text-lg text-white relative group transition-all duration-300 ease-in-out' 
+                        onClick={() => setIsOpen(false)}
+                    >
+                        <span className='relative inline-block transition-all duration-300 ease-in-out hover:text-purple-400'>
+                            {link.name}
+                            <span className='absolute bottom-0 left-0 w-0 h-0.5 bg-purple-400 transition-all duration-300 ease-out group-hover:w-full'></span>
+                        </span>
                     </a>
                 ))}
+                <button className='text-lg text-white border-2 border-purple-500 py-2 px-6 rounded-full transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-purple-600 hover:border-purple-600 hover:shadow-[0_0_15px_rgba(168,85,247,0.5)] active:scale-95'>
+                    Contact
+                </button>
                 {/* contact Button */}
                 <button className='inline-flex text-white border-2 py-2 px-6 focus:outline-none hover:bg-purple-800 rounded-full text-lg'>Contact</button>
             </div>

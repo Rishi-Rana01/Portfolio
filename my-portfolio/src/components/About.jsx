@@ -5,7 +5,6 @@ const stats = [
   { label: 'Projects Completed', value: '7+' },
   { label: 'Technologies', value: '15+' },
   { label: 'Years Experience', value: '2+' },
-  { label: 'Happy Clients', value: '5+' },
 ]
 
 const highlights = [

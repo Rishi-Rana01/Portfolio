@@ -13,7 +13,7 @@ const socialLinks = [
   { icon: <FiGithub className="w-4 h-4" />, href: 'https://github.com/Rishi-Rana01', label: 'GitHub' },
   { icon: <FiLinkedin className="w-4 h-4" />, href: 'https://linkedin.com', label: 'LinkedIn' },
   { icon: <FiInstagram className="w-4 h-4" />, href: 'https://instagram.com', label: 'Instagram' },
-  { icon: <FiMail className="w-4 h-4" />, href: 'mailto:rishirana@example.com', label: 'Email' },
+  { icon: <FiMail className="w-4 h-4" />, href: 'mailto:rishirana012354@gmail.com', label: 'Email' },
 ]
 
 const Footer = () => {
@@ -30,7 +30,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="sm:col-span-1">
             <a href="#home" className="text-2xl font-bold gradient-text font-[Space_Grotesk] block mb-4">
-              Rishi.dev
+              Rishi Rana
             </a>
             <p className="text-sm text-zinc-500 leading-relaxed max-w-xs">
               AI-focused Full Stack Developer building intelligent, responsive web applications
@@ -61,7 +61,7 @@ const Footer = () => {
               href="mailto:rishirana@example.com"
               className="text-sm text-zinc-500 hover:text-purple-400 transition-colors duration-300 block mb-6"
             >
-              rishirana@example.com
+              rishirana012354@gmail.com
             </a>
             <div className="flex items-center gap-5">
               {socialLinks.map((s) => (

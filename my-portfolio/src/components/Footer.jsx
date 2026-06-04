@@ -12,7 +12,7 @@ const quickLinks = [
 const socialLinks = [
   { icon: <FiGithub className="w-4 h-4" />, href: 'https://github.com/Rishi-Rana01', label: 'GitHub' },
   { icon: <FiLinkedin className="w-4 h-4" />, href: 'https://linkedin.com', label: 'LinkedIn' },
-  { icon: <FiInstagram className="w-4 h-4" />, href: 'https://instagram.com', label: 'Instagram' },
+  { icon: <FiInstagram className="w-4 h-4" />, href: 'https://www.instagram.com/the.rishi_rana?igsh=Z3k2ZmZjbTIxYXp1', label: 'Instagram' },
   { icon: <FiMail className="w-4 h-4" />, href: 'mailto:rishirana012354@gmail.com', label: 'Email' },
 ]
 

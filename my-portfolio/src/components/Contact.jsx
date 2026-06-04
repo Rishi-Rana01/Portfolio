@@ -8,8 +8,8 @@ const contactInfo = [
   {
     icon: <FiMail className="w-5 h-5" />,
     label: 'Email',
-    value: 'rishirana@example.com',
-    href: 'mailto:rishirana@example.com',
+    value: 'rishirana012354@gmail.com',
+    href: 'mailto:rishirana012354@gmail.com',
     color: 'text-purple-400',
     bg: 'bg-purple-500/10 border-purple-500/20',
   },
@@ -38,7 +38,7 @@ const socialLinks = [
   },
   {
     icon: <FiInstagram className="w-5 h-5" />,
-    href: 'https://instagram.com',
+    href: 'https://www.instagram.com/the.rishi_rana?igsh=Z3k2ZmZjbTIxYXp1',
     label: 'Instagram',
     hoverColor: 'hover:bg-pink-500/10 hover:text-pink-400 hover:border-pink-500/30',
   },
@@ -73,7 +73,7 @@ const Contact = () => {
 
     try {
       // Using mailto as the contact handler (no backend required)
-      const mailtoLink = `mailto:rishirana@example.com?subject=${encodeURIComponent(form.subject || 'Portfolio Contact')}&body=${encodeURIComponent(`Name: ${form.name}\nEmail: ${form.email}\n\n${form.message}`)}`
+      const mailtoLink = `mailto:[EMAIL_ADDRESS]?subject=${encodeURIComponent(form.subject || 'Portfolio Contact')}&body=${encodeURIComponent(`Name: ${form.name}\nEmail: ${form.email}\n\n${form.message}`)}`
       window.location.href = mailtoLink
       setStatus('success')
       setForm(INPUT_INITIAL)

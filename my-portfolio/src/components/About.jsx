@@ -1,45 +1,135 @@
 import React from 'react'
+import { FiCode, FiCpu, FiDatabase, FiZap } from 'react-icons/fi'
 
+const stats = [
+  { label: 'Projects Completed', value: '7+' },
+  { label: 'Technologies', value: '15+' },
+  { label: 'Years Experience', value: '2+' },
+  { label: 'Happy Clients', value: '5+' },
+]
+
+const highlights = [
+  { icon: <FiCode className="w-4 h-4" />, text: 'MERN Stack Expert' },
+  { icon: <FiCpu className="w-4 h-4" />, text: 'AI/ML Integration' },
+  { icon: <FiDatabase className="w-4 h-4" />, text: 'Database Architecture' },
+  { icon: <FiZap className="w-4 h-4" />, text: 'Fast, Scalable APIs' },
+]
 
 const About = () => {
-    return (
-        <section id='about' className='min-h-screen flex items-center justify-center text-white px-4 sm:px-6'>
-            <div className='max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center'>
-                <figure data-aos='fade-right' data-aos-delay='500' className='relative flex justify-center items-center'>
-                    {/* decorative background - hidden on very small screens */}
-                    <div className='hidden sm:block absolute right-5 -top-2 md:top-10 z-0 rounded-full bg-linear-to-l from-[#6d2897] via-[#6c95f5] to-[#bb61c5] w-48 md:w-72 h-48 md:h-72 transform rotate-12'></div>
+  return (
+    <section
+      id="about"
+      className="relative flex items-center justify-center text-white px-6 sm:px-12 lg:px-24 py-28 lg:py-40 overflow-hidden"
+    >
+      {/* Background effects */}
+      <div className="pointer-events-none absolute inset-0 z-0">
+        <div className="absolute top-1/3 left-1/4 w-[400px] h-[400px] bg-violet-700/15 rounded-full blur-[120px]" />
+        <div className="absolute bottom-1/4 right-1/4 w-[300px] h-[300px] bg-purple-600/10 rounded-full blur-[100px]" />
+      </div>
 
-                    {/* small overlay image */}
-                    <img src='/img_about.png' alt='about small' className='absolute -top-6 left-6 sm:left-10 z-20 w-24 h-24 sm:w-32 sm:h-32 rounded-3xl shadow-lg object-cover' />
+      <div className="relative z-10 max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
 
-                    {/* main image */}
-                    <img src='/img.png' alt='Laptop' className='relative z-10 w-56 sm:w-64 md:w-72 lg:w-[420px] h-auto rounded-lg shadow-lg object-cover' />
+        {/* Left — Image stack */}
+        <figure
+          className="relative flex justify-center items-center"
+          data-aos="fade-right"
+          data-aos-delay="200"
+        >
+          {/* Main image */}
+          <div className="relative">
+            <div className="absolute -inset-1 bg-linear-to-br from-purple-600 via-violet-600 to-pink-600 rounded-3xl blur-sm opacity-40" />
+            <img
+              src="/img.png"
+              alt="Rishi Rana - Developer"
+              className="relative w-64 sm:w-80 lg:w-[380px] rounded-3xl object-cover shadow-2xl border border-white/5"
+            />
+            <div className="absolute inset-0 rounded-3xl bg-linear-to-t from-black/30 via-transparent to-transparent" />
+          </div>
 
-                    {/* bottom overlay */}
-                    <img src='/img_about.png' alt='about bottom' className='absolute bottom-0 right-6 sm:right-10 z-10 w-32 h-24 sm:w-36 sm:h-32 rounded-3xl shadow-lg object-cover' />
-                </figure>
+          {/* Decorative ring */}
+          <div className="absolute -right-6 -top-6 w-32 h-32 rounded-full border-2 border-dashed border-purple-500/30 animate-spin-slow" />
 
-                <article data-aos='fade-left' data-aos-delay='500' className='text-center lg:text-left relative'>
-                    <div className='absolute z-0 w-40 h-40 sm:w-60 sm:h-60 bg-[#cd3cf5] rounded-full blur-3xl opacity-50 -top-5 left-10'></div>
-                    <header>
-                        <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold mb-4 sm:mb-6 relative z-10'>
-                            About Me
-                        </h1>
-                    </header>
-                    <p className='text-base sm:text-lg md:text-xl text-gray-300 mb-6 sm:mb-8 leading-relaxed relative z-10 max-w-xl'>
-                        Hello, I'm Rishi Rana — an AI-focused Full Stack Developer experienced with the MERN stack and Python-based machine learning tools. I build scalable, maintainable web applications that combine clean UI, robust APIs, and intelligent data features.
-                        My projects span end-to-end development: API design, database modeling, frontend UX, and deploying production-ready solutions.
-                    </p>
-                    <footer className='relative z-10'>
-                        <button className='inline-flex text-white border-2 py-2 px-4 sm:px-6 focus:outline-none hover:bg-[#801b9c] hover:shadow-[0_0_40px_rgba(128,0,128,0.7)] rounded-full text-sm sm:text-lg'>
-                            Learn More
-                        </button>
-                    </footer>
-                </article>
+          {/* Stats card */}
+          <div className="absolute -bottom-6 -right-4 sm:right-0 glass rounded-2xl p-4 border border-purple-500/20 shadow-xl">
+            <div className="grid grid-cols-2 gap-3">
+              {stats.map((stat, i) => (
+                <div key={i} className="text-center">
+                  <p className="text-lg font-bold gradient-text">{stat.value}</p>
+                  <p className="text-xs text-zinc-500 leading-tight">{stat.label}</p>
+                </div>
+              ))}
             </div>
+          </div>
 
-        </section>
-    )
+          {/* Secondary image */}
+          <div className="absolute -top-8 -left-4 sm:left-0">
+            <div className="relative">
+              <div className="absolute -inset-0.5 bg-linear-to-br from-violet-600 to-purple-600 rounded-2xl blur-sm opacity-60" />
+              <img
+                src="/img_about.png"
+                alt="About Rishi"
+                className="relative w-24 h-24 sm:w-28 sm:h-28 rounded-2xl object-cover shadow-lg border border-white/10"
+              />
+            </div>
+          </div>
+        </figure>
+
+        {/* Right — Content */}
+        <article
+          className="text-center lg:text-left"
+          data-aos="fade-left"
+          data-aos-delay="300"
+        >
+          {/* Section label */}
+          <div className="inline-flex items-center gap-2 glass rounded-full px-4 py-2 mb-5 text-xs text-purple-400 uppercase tracking-widest border border-purple-500/20">
+            <span className="w-1.5 h-1.5 rounded-full bg-purple-400" />
+            About Me
+          </div>
+
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-5 leading-tight font-[Space_Grotesk]">
+            Crafting Digital{' '}
+            <span className="gradient-text">Experiences</span>{' '}
+            That Matter
+          </h2>
+
+          <p className="text-zinc-400 text-base sm:text-lg leading-relaxed mb-5">
+            I'm <span className="text-white font-semibold">Rishi Rana</span> — an AI-focused Full Stack Developer
+            experienced with the MERN stack and Python-based machine learning tools. I build scalable,
+            maintainable web applications that combine clean UI, robust APIs, and intelligent data features.
+          </p>
+
+          <p className="text-zinc-500 text-sm sm:text-base leading-relaxed mb-8">
+            My projects span end-to-end development: API design, database modeling, frontend UX,
+            and deploying production-ready solutions. I'm passionate about leveraging AI to solve
+            real-world problems.
+          </p>
+
+          {/* Highlight pills */}
+          <div className="flex flex-wrap justify-center lg:justify-start gap-4 mb-8">
+            {highlights.map((h, i) => (
+              <div
+                key={i}
+                className="glass-card flex items-center gap-2 px-4 py-2.5 rounded-full text-sm text-zinc-300 border border-purple-500/15"
+              >
+                <span className="text-purple-400">{h.icon}</span>
+                {h.text}
+              </div>
+            ))}
+          </div>
+
+          {/* CTA */}
+          <div className="flex flex-wrap justify-center lg:justify-start gap-4">
+            <a href="#contact" className="btn-primary">
+              Get In Touch
+            </a>
+            <a href="#projects" className="btn-outline">
+              View My Work
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+  )
 }
 
 export default About

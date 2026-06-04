@@ -4,7 +4,7 @@ import Frontend from '/Frontend.png';
 
 const projects = [
     {
-        id: 1,
+        id: 3,
         title: 'Get Me A Chai',
         image: '/Front.Page.png',
         description: 'A modern crowdfunding platform for creators, built with Next.js',
@@ -12,7 +12,7 @@ const projects = [
         skills: ['Next.js', 'NextAuth.js', 'Tailwind', 'JavaScript', 'MongoDB', 'Payment gateway integration'],
     },
     {
-        id: 2,
+        id: 7,
         title: 'Weather App',
         image: '/Weather.png',
         description: 'A weather forecasting app using OpenWeatherMap API.',
@@ -20,7 +20,7 @@ const projects = [
         skills: ['Java Script', 'API', 'CSS', 'Html'],
     },
     {
-        id: 3,
+        id: 4,
         title: 'PrepFast',
         image: '/PrepFast.png',
         description: 'An interactive mock interview platform built with Next.js (App Router), TypeScript and Firebase',
@@ -28,7 +28,7 @@ const projects = [
         skills: ['TypeScript', 'Next.js', 'API Routes', 'Firebase', 'Tailwind CSS', 'Ai Libraries'],
     },
     {
-        id: 3,
+        id: 2,
         title: 'AI-Powered Code Reviewer',
         image: '/Home.png',
         description: 'This is a simple AI-powered code review web app with a React frontend and a Node/Express backend.',
@@ -36,7 +36,7 @@ const projects = [
         skills: ['JavaScrip', 'React', 'Gemini Ai', 'Tailwind CSS', 'Ai Libraries'],
     },
     {
-        id: 4,
+        id: 1,
         title: 'Quite-app',
         image: '/quite-app.png',
         description: 'Quite App is a full-featured quiet productivity application designed to help users focus on their goals and manage their tasks effectively. ',
@@ -58,16 +58,7 @@ const projects = [
         description: 'An advanced personal finance and budget tracking application designed to monitor expenses, visualize income streams, and manage savings goals.',
         link: 'https://github.com/Rishi-Rana01/Finance2',
         skills: ['JavaScript', 'React', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS', 'Chart.js']
-    },
-    {
-        id: 7,
-        title: 'JN',
-        image: '/jn.png',
-        description: 'A lightweight and responsive frontend web application focused on clean UI layouts and optimized user interactions.',
-        link: 'https://github.com/Rishi-Rana01/JN',
-        skills: ['HTML', 'CSS', 'JavaScript', 'Tailwind CSS']
     }
-
 ];
 
 const ProjectCard = ({ image, title, description, link, skills, aos, aosDelay }) => (

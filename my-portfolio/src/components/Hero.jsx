@@ -17,7 +17,7 @@ const socialLinks = [
   },
   {
     icon: <FiInstagram className="w-5 h-5" />,
-    href: 'https://instagram.com',
+    href: 'https://www.instagram.com/the.rishi_rana?igsh=Z3k2ZmZjbTIxYXp1',
     label: 'Instagram',
     color: 'hover:text-pink-400 hover:border-pink-400/40',
   },

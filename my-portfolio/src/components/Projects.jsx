@@ -35,7 +35,39 @@ const projects = [
         link: 'https://github.com/Rishi-Rana01/AI-Powered-Code-Reviewer',
         skills: ['JavaScrip', 'React', 'Gemini Ai', 'Tailwind CSS', 'Ai Libraries'],
     },
-        
+    {
+        id: 4,
+        title: 'Quite-app',
+        image: '/quite-app.png',
+        description: 'Quite App is a full-featured quiet productivity application designed to help users focus on their goals and manage their tasks effectively. ',
+        link: 'https://github.com/Rishi-Rana01/quite-app',
+        skills: ['Next.js', 'TypeScript', 'shadcn/ui', 'React Hook Form', 'Zod', 'React', 'Gemini Ai', 'Tailwind CSS', 'Ai Libraries', 'Next-Auth', 'Mongoose'],
+    },
+    {
+        id: 5,
+        title: 'Fullstack-Dashboard',
+        image: '/fullstack-dashboard.png',
+        description: 'A comprehensive, interactive full-stack admin dashboard providing data visualization, user management, and real-time analytics tracking.',
+        link: 'https://github.com/Rishi-Rana01/Fullstack-Dashboard',
+        skills: ['TypeScript', 'React', 'Next.js', 'Tailwind CSS', 'Node.js', 'Express.js', 'Recharts', 'Mongoose']
+    },
+    {
+        id: 6,
+        title: 'FinanceBoard',
+        image: '/finance2.png',
+        description: 'An advanced personal finance and budget tracking application designed to monitor expenses, visualize income streams, and manage savings goals.',
+        link: 'https://github.com/Rishi-Rana01/Finance2',
+        skills: ['JavaScript', 'React', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS', 'Chart.js']
+    },
+    {
+        id: 7,
+        title: 'JN',
+        image: '/jn.png',
+        description: 'A lightweight and responsive frontend web application focused on clean UI layouts and optimized user interactions.',
+        link: 'https://github.com/Rishi-Rana01/JN',
+        skills: ['HTML', 'CSS', 'JavaScript', 'Tailwind CSS']
+    }
+
 ];
 
 const ProjectCard = ({ image, title, description, link, skills, aos, aosDelay }) => (

@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from './Navbar'
+import LiquidEther from './LiquidEther'
 import { FiGithub, FiLinkedin, FiInstagram, FiDownload, FiArrowDown } from 'react-icons/fi'
 
 const socialLinks = [
@@ -27,11 +28,25 @@ const Hero = () => {
   return (
     <div className="relative min-h-screen flex flex-col bg-grid overflow-hidden">
 
-      {/* Background orbs */}
-      <div className="pointer-events-none absolute inset-0 z-0">
-        <div className="absolute top-1/4 right-1/4 w-[500px] h-[500px] bg-purple-700/20 rounded-full blur-[120px]" />
-        <div className="absolute bottom-1/3 left-1/4 w-[400px] h-[400px] bg-violet-600/15 rounded-full blur-[100px]" />
-        <div className="absolute top-10 left-1/2 w-[200px] h-[200px] bg-pink-600/10 rounded-full blur-[80px]" />
+      {/* Interactive LiquidEther background */}
+      <div className="absolute inset-0 z-0" style={{ width: '100%', height: '100%', position: 'absolute' }}>
+        <LiquidEther
+          colors={['#5227FF', '#FF9FFC', '#B497CF']}
+          mouseForce={20}
+          cursorSize={100}
+          isViscous={false}
+          viscous={30}
+          iterationsViscous={32}
+          iterationsPoisson={32}
+          resolution={0.5}
+          isBounce={false}
+          autoDemo={true}
+          autoSpeed={0.5}
+          autoIntensity={2.2}
+          takeoverDuration={0.25}
+          autoResumeDelay={3000}
+          autoRampDuration={0.6}
+        />
       </div>
 
       {/* Decorative rotated card */}

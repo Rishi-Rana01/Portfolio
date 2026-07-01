@@ -92,9 +92,10 @@ const About = () => {
 
           <p className="text-zinc-400 text-base sm:text-lg leading-relaxed mb-5">
             I'm <span className="text-white font-semibold">Rishi Rana</span> — an AI-focused Full Stack Developer
-            experienced with the MERN stack and Python-based machine learning tools. I build scalable,
+            experienced with the MERN stack , Next.js and Python-based machine learning tools. I build scalable,
             maintainable web applications that combine clean UI, robust APIs, and intelligent data features.
           </p>
+
 
           <p className="text-zinc-500 text-sm sm:text-base leading-relaxed mb-8">
             My projects span end-to-end development: API design, database modeling, frontend UX,

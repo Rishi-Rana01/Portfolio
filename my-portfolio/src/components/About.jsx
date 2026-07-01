@@ -4,7 +4,6 @@ import { FiCode, FiCpu, FiDatabase, FiZap } from 'react-icons/fi'
 const stats = [
   { label: 'Projects Completed', value: '7+' },
   { label: 'Technologies', value: '15+' },
-  { label: 'Years Experience', value: '2+' },
 ]
 
 const highlights = [

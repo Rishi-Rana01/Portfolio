@@ -143,10 +143,10 @@ const Hero = () => {
           </div>
 
           {/* Floating badge: exp */}
-          <div className="absolute -bottom-4 -left-4 sm:left-4 glass rounded-2xl px-4 py-3 border border-purple-500/20 shadow-lg">
+          {/* <div className="absolute -bottom-4 -left-4 sm:left-4 glass rounded-2xl px-4 py-3 border border-purple-500/20 shadow-lg">
             <p className="text-2xl font-bold text-white">2+</p>
             <p className="text-xs text-zinc-400">Years Experience</p>
-          </div>
+          </div> */}
 
           {/* Floating badge: projects */}
           <div className="absolute -top-2 -right-2 sm:right-4 glass rounded-2xl px-4 py-3 border border-purple-500/20 shadow-lg">
